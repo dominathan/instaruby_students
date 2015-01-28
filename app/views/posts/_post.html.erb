@@ -1,0 +1,9 @@
+<span class="name"><%= post.user_name %></span>
+<div class="post col-md-8">
+  <%= link_to(image_tag(post.image_url), post) %>
+  <span class="likes">
+    <%= post.likes %>
+    <span class="like-icon glyphicon glyphicon-heart-empty"></span>
+  </span>
+  <p><%= post.caption %></p>
+</div>

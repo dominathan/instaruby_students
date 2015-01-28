@@ -2,13 +2,9 @@
 
 <h1>All Posts</h1>
 <div class="row">
-  <section class="posts col-md-8">
+  <section class="posts col-md-12">
     <% @posts.each do |post| %>
-    <div class="post col-md-12">
-      <%= image_tag(post.image_url) %>
-      <p><%= post.caption %></p>
-      <span class="likes"><%= post.likes %></span><span class="name"><%= post.user_name %></span>
-    </div>
+      <%= render partial: 'post', locals: { post: post } %>
     <% end %>
   </section>
 </div>
