@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>All Posts</h1>
+<div class="row">
+  <section class="posts col-md-8">
+    <% @posts.each do |post| %>
+    <div class="post col-md-12">
+      <%= image_tag(post.image_url) %>
+      <p><%= post.caption %></p>
+      <span class="likes"><%= post.likes %></span><span class="name"><%= post.user_name %></span>
+    </div>
+    <% end %>
+  </section>
+</div>
+<%= link_to 'New Post', new_post_path %>

@@ -1,0 +1,29 @@
+.posts {
+  $bg-color: #938172;
+  font-family: Helvetica;
+  background: $bg-color;
+  color: white;
+  img {
+    width: 150px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #333;
+  }
+
+  p {
+    background: lighten($bg-color, 10%);
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .likes {
+    background: #626266;
+    border-radius: 30px;
+    width: 30px;
+    margin: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    box-shadow: 1px 1px 1px #FAFAFA;
+  }
+}
